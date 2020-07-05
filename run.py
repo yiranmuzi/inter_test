@@ -23,7 +23,7 @@ def run(file_name,sheet_name,c1,c2):
         if test_data[1]=='login':
             token='Bearer '+response['data']['token_info']['token']
         write_data(file_name,sheet_name,i+2,c1,str(response))
-#         print(response)
+        print(str(response))
         # 判断测试用例是否通过
 
         actual={'code':response['code'],'msg':response['msg']}
