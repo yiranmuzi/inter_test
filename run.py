@@ -2,6 +2,7 @@
 # @Time    : 2020/7/3 19:18
 # @Author  : muzijie
 # @File    : run.py
+coding=utf-8
 
 from http_request import http_request
 from rw_excel import read_data
