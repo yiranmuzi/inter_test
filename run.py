@@ -2,7 +2,7 @@
 # @Time    : 2020/7/3 19:18
 # @Author  : muzijie
 # @File    : run.py
-coding=utf-8
+
 
 from http_request import http_request
 from rw_excel import read_data
@@ -24,7 +24,7 @@ def run(file_name,sheet_name,c1,c2):
         if test_data[1]=='login':
             token='Bearer '+response['data']['token_info']['token']
         write_data(file_name,sheet_name,i+2,c1,str(response))
-        print(str(response))
+        print(response.encode('GBK','ignore').decode('GBK'))
         # 判断测试用例是否通过
 
         actual={'code':response['code'],'msg':response['msg']}
