@@ -3,9 +3,9 @@
 # @Author  : muzijie
 # @File    : run.py
 
-from autowork.http_request import http_request
-from autowork.rw_excel import read_data
-from autowork.rw_excel import  write_data
+from http_request import http_request
+from rw_excel import read_data
+from rw_excel import  write_data
 
 token=None #全局变量初始值
 def run(file_name,sheet_name,c1,c2):
