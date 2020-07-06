@@ -8,6 +8,9 @@ from http_request import http_request
 from rw_excel import read_data
 from rw_excel import  write_data
 
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
+
 token=None #全局变量初始值
 def run(file_name,sheet_name,c1,c2):
     global token  #声明全局变量
